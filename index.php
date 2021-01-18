@@ -10,10 +10,18 @@
 <body>
     <h1>Accueil</h1>
 
-    <label for="pseudo">Pseudo : </label>
-    <input id="pseudo">
+<form action="#" method="POST">
+    <h2>Player 1</h2>
+        <label for="pseudo">Pseudo : </label>
+        <input type="text" id="pseudo" name="pseudo">
+        <input type="submit" value="Submit">
 
-    <button onclick="redirection()">Jouer</button>
+    <h2>Player 2</h2>
+        <label for="pseudo">Pseudo : </label>
+        <input type="text" id="pseudo" name="pseudo">
+        <input type="submit" value="Submit">
+</form>
+
 
     <script src="js/script.js"></script>
 </body>
