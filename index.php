@@ -10,22 +10,22 @@
 <body>
     <h1>Accueil</h1>
 
-<form action="#" method="POST">
+<form action="./database/user_infos_database.php" method="POST">
 
     <div>
         <h2>Player 1</h2>
-        <label for="pseudo">Pseudo : </label>
-        <input type="text" id="pseudo" name="pseudo">
+        <label for="firstPlayer">Pseudo : </label>
+        <input type="text" id="firstPlayer" name="firstPlayer">
     </div>
 
     <div>
         <h2>Player 2</h2>
-        <label for="pseudo">Pseudo : </label>
-        <input type="text" id="pseudo" name="pseudo">
+        <label for="secondPlayer">Pseudo : </label>
+        <input type="text" id="secondPlayer" name="secondPlayer">
     </div>
 
     <input type="submit" value="Submit">
-    
+
 </form>
 
 
