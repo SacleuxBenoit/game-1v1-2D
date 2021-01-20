@@ -6,6 +6,8 @@ if(!empty($_POST['firstPlayer']) && !empty($_POST['secondPlayer'])){
     $addUser->bindParam(':firstPlayer', $_POST['firstPlayer']);
     $addUser->bindParam(':secondPlayer', $_POST['secondPlayer']);
     $addUser->execute();
+}else{
+    header('Location: ../index.php');
 }
 
 ?>
