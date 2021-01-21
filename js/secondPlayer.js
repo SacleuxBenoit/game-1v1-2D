@@ -69,5 +69,5 @@ function nextPlayerP2(){
     QuickAttackP1.disabled = false;
     SlowAttackP1.disabled = false;
     HealP1.disabled = false;
-    buttonExecution.disabled = false;
+    Execution.disabled = false;
 }

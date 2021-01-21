@@ -19,17 +19,17 @@ function reduceLifeP1(min, max, reduceMana){
     }
     if(currentLifeP2 <= 25 && currentLifeP2 >= 1){
         showLifeP2.style.background = "red"
-        buttonExecution.disabled = false
+        Execution.disabled = false
     }
     if(currentLifeP2 <= 0){
         result.textContent = "Le joueur 1 a gagné.";
-        disabledQuickAttackP1.disabled = true;
-        disabledSlowAttackP1.disabled = true;
-        disabledHealP1.disabled = true;
-        disabledQuickAttackP2.disabled = true;
-        disabledSlowAttackP2.disabled = true;
-        disabledHealP2.disabled = true;
-        buttonExecution.disabled = true;
+        QuickAttackP1.disabled = true;
+        SlowAttackP1.disabled = true;
+        HealP1.disabled = true;
+        QuickAttackP2.disabled = true;
+        SlowAttackP2.disabled = true;
+        HealP2.disabled = true;
+        Execution.disabled = true;
         showLifeP2.textContent = " 0 %"
     }
     verifyManaP1();

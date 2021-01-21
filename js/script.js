@@ -36,7 +36,7 @@ function resetP1(){
     showManaP2.textContent = manaP2 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     showLifeP2.style.background = "greenyellow";
-    buttonExecution.disabled = true
+    Execution.disabled = true
 }
 
 function resetP2(){
