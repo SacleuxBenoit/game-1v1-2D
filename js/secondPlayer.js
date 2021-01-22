@@ -44,7 +44,7 @@ function quickAttackP2(){
 }
 
 function slowAttackP2(){
-    reduceLifeP2(1, 5, 10);
+    reduceLifeP2(4, 15, 10);
 }
 
 function healP2(){
@@ -69,5 +69,8 @@ function nextPlayerP2(){
     QuickAttackP1.disabled = false;
     SlowAttackP1.disabled = false;
     HealP1.disabled = false;
-    Execution.disabled = false;
+
+    if(lifeP2 <= 25){
+        Execution.disabled = false;
+    }
 }
