@@ -13,25 +13,7 @@ function reduceLifeP1(min, max, reduceMana){
     showManaP1.textContent = manaP1 + " %";
     showLifeP2.textContent = currentLifeP2 + " %";
 
-    if(currentLifeP2 <= 75 && currentLifeP2 >= 26){
-        showLifeP2.style.background = "orange"
-        HealP2.disabled = false;
-    }
-    if(currentLifeP2 <= 25 && currentLifeP2 >= 1){
-        showLifeP2.style.background = "red"
-        Execution.disabled = false
-    }
-    if(currentLifeP2 <= 0){
-        result.textContent = "Le joueur 1 a gagné.";
-        QuickAttackP1.disabled = true;
-        SlowAttackP1.disabled = true;
-        HealP1.disabled = true;
-        QuickAttackP2.disabled = true;
-        SlowAttackP2.disabled = true;
-        HealP2.disabled = true;
-        Execution.disabled = true;
-        showLifeP2.textContent = " 0 %"
-    }
+    checkLife();
     verifyManaP1();
     nextPlayerP1();
 }
@@ -77,4 +59,25 @@ function nextPlayerP1(){
     QuickAttackP2.disabled = false;
     SlowAttackP2.disabled = false;
     HealP2.disabled = false;
+}
+
+function checkLife(){
+    if(lifeP2 <= 75 && lifeP2 >= 26){
+        showLifeP2.style.background = "orange"
+        HealP2.disabled = false;
+    }
+    if(lifeP2 <= 25 && lifeP2 >= 1){
+        showLifeP2.style.background = "red"
+    }
+    if(lifeP2 <= 0){
+        result.textContent = "Le joueur 1 a gagné.";
+        QuickAttackP1.disabled = true;
+        SlowAttackP1.disabled = true;
+        HealP1.disabled = true;
+        QuickAttackP2.disabled = true;
+        SlowAttackP2.disabled = true;
+        HealP2.disabled = true;
+        Execution.disabled = true;
+        showLifeP2.textContent = " 0 %"
+    }
 }
