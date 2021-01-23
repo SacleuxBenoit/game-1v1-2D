@@ -13,7 +13,7 @@ function reduceLifeP1(min, max, reduceMana){
     showManaP1.textContent = manaP1 + " %";
     showLifeP2.textContent = currentLifeP2 + " %";
 
-    checkLife();
+    checkLifeP1();
     verifyManaP1();
     nextPlayerP1();
 }
@@ -61,7 +61,7 @@ function nextPlayerP1(){
     HealP2.disabled = false;
 }
 
-function checkLife(){
+function checkLifeP1(){
     if(lifeP2 <= 75 && lifeP2 >= 26){
         showLifeP2.style.background = "orange"
         HealP2.disabled = false;
