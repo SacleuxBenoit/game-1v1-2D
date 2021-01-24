@@ -37,16 +37,13 @@ function exec(){
     reduceLifeP1(25,25, 20)
 }
 
-function healP1(){
+function getHealP1(){
     let min = 7;
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP1 += random;
     showLifeP1.textContent = lifeP1 + " %";
-
-    if(lifeP1 >= 100){
-        HealP1.disabled = true
-    }
+    HealP1.disabled = true;
 }
 
 function nextPlayerP1(){

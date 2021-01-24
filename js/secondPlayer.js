@@ -35,13 +35,10 @@ function healP2(){
     let min = 7;
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
-    let lifeP2 = lifeP2 += random;
+    lifeP2 += random;
     showLifeP2.textContent = lifeP2 + " %";
-    console.log(lifeP2);
 
-    if(lifeP2 >= 100){
         HealP2.disabled = true
-    }
 }
 
 function nextPlayerP2(){

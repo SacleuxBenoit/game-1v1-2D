@@ -17,7 +17,7 @@
         <p class="mana" id="showManaP1"></p>
         <button onclick="quickAttackP1()" id="QuickAttackP1">Attaque rapide</button>
         <button onclick="slowAttackP1()" id="SlowAttackP1">Attaque lente</button>
-        <button onclick="healP1()" id="HealP1" disabled>Heal</button>
+        <button onclick="getHealP1()" id="HealP1" disabled>Heal</button>
         <button onclick="exec()" id="Execution" disabled>Execution</button>
     </div>
 
