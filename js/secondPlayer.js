@@ -6,11 +6,11 @@ let manaP2 = 100;
 
 function reduceLifeP2(min, max, reduceMana){
     let random = Math.floor((Math.random() * (max - min) + min));
-    let currentLifeP1 = lifeP1 -= random;
+    lifeP1 -= random;
 
     manaP2 -= reduceMana;
     showManaP2.textContent = manaP2 + " %";
-    showLifeP1.textContent = currentLifeP1 + " %";
+    showLifeP1.textContent = lifeP1 + " %";
 
     checkLifeP2();
     verifyManaP2();
@@ -35,11 +35,11 @@ function healP2(){
     let min = 7;
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
-    let currentLifeP2 = lifeP2 += random;
-    showLifeP2.textContent = currentLifeP2 + " %";
-    console.log(currentLifeP2);
+    let lifeP2 = lifeP2 += random;
+    showLifeP2.textContent = lifeP2 + " %";
+    console.log(lifeP2);
 
-    if(currentLifeP2 >= 100){
+    if(lifeP2 >= 100){
         HealP2.disabled = true
     }
 }
