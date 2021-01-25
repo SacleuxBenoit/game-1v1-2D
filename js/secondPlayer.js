@@ -31,14 +31,13 @@ function slowAttackP2(){
     reduceLifeP2(4, 15, 10);
 }
 
-function healP2(){
+function getHealP2(){
     let min = 7;
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP2 += random;
     showLifeP2.textContent = lifeP2 + " %";
-
-        HealP2.disabled = true
+    nextPlayerP2();
 }
 
 function nextPlayerP2(){

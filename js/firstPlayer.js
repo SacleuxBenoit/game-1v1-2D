@@ -43,7 +43,7 @@ function getHealP1(){
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP1 += random;
     showLifeP1.textContent = lifeP1 + " %";
-    HealP1.disabled = true;
+    nextPlayerP1();
 }
 
 function nextPlayerP1(){
