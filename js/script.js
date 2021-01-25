@@ -16,7 +16,7 @@ function redirection(){
 }
 
 function displayText(){
-    firstTitle.textContent = "Le joueur 1 commence."
+    firstTitle.textContent = "Le joueur 1 commence.";
 
     showLifeP1.textContent = lifeP1 + " %";
     showLifeP2.textContent = lifeP2 + " %";
@@ -36,7 +36,7 @@ function resetP1(){
     showManaP2.textContent = manaP2 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     showLifeP2.style.background = "greenyellow";
-    Execution.disabled = true
+    Execution.disabled = true;
 }
 
 function resetP2(){
@@ -53,5 +53,6 @@ function resetP2(){
 function reset(){
     resetP1();
     resetP2();
-    result.textContent = " "
+    displayText();
+    result.textContent = " ";
 }
