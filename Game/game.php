@@ -25,8 +25,8 @@
         <p id="pseudoP2">Joueur 2</p>
         <p class="life" id="showLifeP2"></p>
         <p class="mana" id="showManaP2"></p>
-        <button onclick="quickAttackP2()" id="QuickAttackP2">Attaque rapide</button>
-        <button onclick="slowAttackP2()" id="SlowAttackP2">Attaque lente</button>
+        <button onclick="quickAttackP2()" id="QuickAttackP2" disabled>Attaque rapide</button>
+        <button onclick="slowAttackP2()" id="SlowAttackP2" disabled>Attaque lente</button>
         <button onclick="getHealP2()" id="HealP2" disabled>Heal</button>
     </div>
 
