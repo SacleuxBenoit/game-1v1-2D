@@ -12,7 +12,7 @@
     <h1 id="firstTitle"></h1>
 
     <div id="player1">
-        <p id="pseudoP1">Joueur 1</p>
+        <p id="pseudoP1"> <?php echo $_POST['firstPlayer'] ?></p>
         <p class="life" id="showLifeP1"></p>
         <p class="mana" id="showManaP1"></p>
         <button onclick="quickAttackP1()" id="QuickAttackP1">Attaque rapide</button>
@@ -22,7 +22,7 @@
     </div>
 
     <div id="player2">
-        <p id="pseudoP2">Joueur 2</p>
+        <p id="pseudoP2"> <?php echo $_POST['secondPlayer'] ?> </p>
         <p class="life" id="showLifeP2"></p>
         <p class="mana" id="showManaP2"></p>
         <button onclick="quickAttackP2()" id="QuickAttackP2" disabled>Attaque rapide</button>

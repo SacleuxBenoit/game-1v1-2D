@@ -10,7 +10,7 @@
 <body>
     <h1>Accueil</h1>
 
-<form action="./database/user_infos_database.php" method="POST">
+<form action="./Game/game.php" method="POST">
 
     <div>
         <h2>Player 1</h2>
