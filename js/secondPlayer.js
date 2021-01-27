@@ -36,6 +36,8 @@ function getHealP2(){
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP2 += random;
+    manaP2 -=10;
+    showManaP2.textContent = manaP2 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     nextPlayerP2();
 }
