@@ -30,7 +30,7 @@ function quickAttackP1(){
 }
 
 function slowAttackP1(){
-    reduceLifeP1(1, 20, 10);
+    reduceLifeP1(40, 70, 10);
 }
 
 function exec(){
@@ -58,16 +58,7 @@ function nextPlayerP1(){
     QuickAttackP2.disabled = false;
     SlowAttackP2.disabled = false;
     HealP2.disabled = false;
-}
 
-function checkLifeP1(){
-    if(lifeP2 <= 75 && lifeP2 >= 26){
-        showLifeP2.style.background = "orange"
-        HealP2.disabled = false;
-    }
-    if(lifeP2 <= 25 && lifeP2 >= 1){
-        showLifeP2.style.background = "red"
-    }
     if(lifeP2 <= 0){
         result.textContent = "Le joueur 1 a gagné.";
         QuickAttackP1.disabled = true;
@@ -78,5 +69,15 @@ function checkLifeP1(){
         HealP2.disabled = true;
         Execution.disabled = true;
         showLifeP2.textContent = " 0 %"
+    }
+}
+
+function checkLifeP1(){
+    if(lifeP2 <= 75 && lifeP2 >= 26){
+        showLifeP2.style.background = "orange"
+        HealP2.disabled = false;
+    }
+    if(lifeP2 <= 25 && lifeP2 >= 1){
+        showLifeP2.style.background = "red"
     }
 }
