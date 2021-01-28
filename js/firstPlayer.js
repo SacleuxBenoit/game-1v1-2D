@@ -46,6 +46,7 @@ function getHealP1(){
     showManaP1.textContent = manaP1 + " %";
     showLifeP1.textContent = lifeP1 + " %";
     nextPlayerP1();
+    checkLifeP1();
 }
 
 function nextPlayerP1(){
@@ -73,11 +74,15 @@ function nextPlayerP1(){
 }
 
 function checkLifeP1(){
+    if(lifeP1 <= 100 && lifeP1 >= 76){
+        showLifeP1.style.background = "greenyellow"
+    }
+
     if(lifeP2 <= 75 && lifeP2 >= 26){
         showLifeP2.style.background = "orange"
         HealP2.disabled = false;
     }
-    if(lifeP2 <= 25 && lifeP2 >= 1){
+    else if(lifeP2 <= 25 && lifeP2 >= 1){
         showLifeP2.style.background = "red"
     }
 }
