@@ -51,14 +51,8 @@ function getHealP1(){
 
 function nextPlayerP1(){
     firstTitle.textContent = "Au tour du joueur 2"
-    QuickAttackP1.disabled = true;
-    SlowAttackP1.disabled = true;
-    HealP1.disabled = true;
-    Execution.disabled = true;
-
-    QuickAttackP2.disabled = false;
-    SlowAttackP2.disabled = false;
-    HealP2.disabled = false;
+    disableButtonP1();
+    enableButtonP2();
 
     if(lifeP2 <= 0){
         result.textContent = "Le joueur 1 a gagné.";
@@ -85,4 +79,17 @@ function checkLifeP1(){
     else if(lifeP2 <= 25 && lifeP2 >= 1){
         showLifeP2.style.background = "red"
     }
+}
+
+function disableButtonP1(){
+    QuickAttackP1.disabled = true;
+    SlowAttackP1.disabled = true;
+    HealP1.disabled = true;
+    Execution.disabled = true;
+}
+
+function enableButtonP2(){
+    QuickAttackP2.disabled = false;
+    SlowAttackP2.disabled = false;
+    HealP2.disabled = false;
 }
