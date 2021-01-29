@@ -4,14 +4,17 @@ let HealP2 = document.getElementById("HealP2");
 
 let manaP2 = 100;
 
+function displayPlayer2(){
+    showManaP2.textContent = manaP2 + " %";
+    showLifeP1.textContent = lifeP1 + " %";
+}
+
 function reduceLifeP2(min, max, reduceMana){
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP1 -= random;
-
     manaP2 -= reduceMana;
-    showManaP2.textContent = manaP2 + " %";
-    showLifeP1.textContent = lifeP1 + " %";
 
+    displayPlayer2();
     checkLifeP2();
     verifyManaP2();
     nextPlayerP2();
@@ -37,8 +40,7 @@ function getHealP2(){
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP2 += random;
     manaP2 -=10;
-    showManaP2.textContent = manaP2 + " %";
-    showLifeP2.textContent = lifeP2 + " %";
+    displayPlayer2();
     nextPlayerP2();
     checkLifeP2();
 }
