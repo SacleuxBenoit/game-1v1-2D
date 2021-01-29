@@ -30,7 +30,7 @@ function quickAttackP1(){
 }
 
 function slowAttackP1(){
-    reduceLifeP1(40, 70, 10);
+    reduceLifeP1(7, 15, 10);
 }
 
 function exec(){

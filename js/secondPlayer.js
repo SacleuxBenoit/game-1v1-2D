@@ -28,7 +28,7 @@ function quickAttackP2(){
 }
 
 function slowAttackP2(){
-    reduceLifeP2(4, 15, 10);
+    reduceLifeP2(7, 15, 10);
 }
 
 function getHealP2(){
