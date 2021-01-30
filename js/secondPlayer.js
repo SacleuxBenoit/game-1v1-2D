@@ -81,5 +81,11 @@ function checkLifeP2(){
         SlowAttackP1.disabled = true;
         HealP1.disabled = true;
         showLifeP1.textContent = " 0 %"
+    }
 }
+
+function enableButtonP2(){
+    QuickAttackP2.disabled = false;
+    SlowAttackP2.disabled = false;
+    HealP2.disabled = false;
 }

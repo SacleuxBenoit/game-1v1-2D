@@ -88,9 +88,3 @@ function disableButtonP1(){
     HealP1.disabled = true;
     Execution.disabled = true;
 }
-
-function enableButtonP2(){
-    QuickAttackP2.disabled = false;
-    SlowAttackP2.disabled = false;
-    HealP2.disabled = false;
-}
