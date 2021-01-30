@@ -5,14 +5,16 @@ let HealP1 = document.getElementById("HealP1");
 
 let manaP1 = 100;
 
+function displayPlayer1(){
+    showManaP1.textContent = manaP1 + " %";
+    showLifeP2.textContent = lifeP2 + " %";
+}
 function reduceLifeP1(min, max, reduceMana){
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP2 -= random;
     manaP1 -= reduceMana;
 
-    showManaP1.textContent = manaP1 + " %";
-    showLifeP2.textContent = lifeP2 + " %";
-
+    displayPlayer1();
     checkLifeP1();
     verifyManaP1();
     nextPlayerP1();
@@ -43,8 +45,7 @@ function getHealP1(){
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP1 += random;
     manaP1 -=10;
-    showManaP1.textContent = manaP1 + " %";
-    showLifeP1.textContent = lifeP1 + " %";
+    displayPlayer1();
     nextPlayerP1();
     checkLifeP1();
 }
