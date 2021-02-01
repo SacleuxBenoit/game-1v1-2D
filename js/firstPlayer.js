@@ -83,3 +83,10 @@ function disableButtonP1(){
     HealP1.disabled = true;
     Execution.disabled = true;
 }
+
+function enableButtonP1(){
+    QuickAttackP1.disabled = false;
+    SlowAttackP1.disabled = false;
+    HealP1.disabled = false;
+    Execution.disabled = false;
+}
