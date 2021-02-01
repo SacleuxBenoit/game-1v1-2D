@@ -72,12 +72,8 @@ function checkLifeP2(){
     }
     if(lifeP1 <= 0){
         result.textContent = "Le joueur 2 a gagné.";
-        QuickAttackP2.disabled = true;
-        SlowAttackP2.disabled = true;
-        HealP2.disabled = true;
-        QuickAttackP1.disabled = true;
-        SlowAttackP1.disabled = true;
-        HealP1.disabled = true;
+        disableButtonP1();
+        disableButtonP2();
         showLifeP1.textContent = " 0 %"
     }
 }
