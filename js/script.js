@@ -17,11 +17,17 @@ function redirection(){
 
 function displayText(){
     firstTitle.textContent = "Le joueur 1 commence.";
+    displayP1();
+    displayP2();
+}
 
+function displayP1(){
     showLifeP1.textContent = lifeP1 + " %";
-    showLifeP2.textContent = lifeP2 + " %";
-    
     showManaP1.textContent = 100 + " %";
+}
+
+function displayP2(){
+    showLifeP2.textContent = lifeP2 + " %";
     showManaP2.textContent = 100 + " %";
 }
 
