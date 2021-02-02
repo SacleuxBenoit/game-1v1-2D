@@ -40,7 +40,7 @@ function getHealP2(){
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP2 += random;
     manaP2 -=10;
-    displayPlayer2();
+    showLifeP2.textContent = lifeP2 + " %";
     nextPlayerP2();
     checkLifeP2();
 }
