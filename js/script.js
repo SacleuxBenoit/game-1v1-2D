@@ -11,10 +11,6 @@ let result = document.getElementById("result");
 let lifeP1 = 100;
 let lifeP2 = 100;
 
-function redirection(){
-    document.location.href="Game/game.php";
-}
-
 function displayText(){
     firstTitle.textContent = "Le joueur 1 commence.";
     displayP1();
@@ -34,23 +30,26 @@ function displayP2(){
 displayText();
 
 function resetP1(){
+    lifeP2 = 100;
+    manaP2 = 100;
+
     QuickAttackP1.disabled = false;
     SlowAttackP1.disabled = false;
     HealP1.disabled = true;
-    lifeP2 = 100;
-    manaP2 = 100;
+    Execution.disabled = true;
+
     showManaP2.textContent = manaP2 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     showLifeP2.style.background = "greenyellow";
-    Execution.disabled = true;
+
 }
 
 function resetP2(){
-    QuickAttackP2.disabled = false;
-    SlowAttackP2.disabled = false;
-    HealP2.disabled = true;
     lifeP1 = 100;
     manaP1 = 100;
+
+    disableButtonP2();
+
     showManaP1.textContent = manaP1 + " %";
     showLifeP1.textContent = lifeP1 + " %";
     showLifeP1.style.background = "greenyellow"
