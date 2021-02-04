@@ -1,6 +1,7 @@
 let QuickAttackP2 = document.getElementById("QuickAttackP2");
 let SlowAttackP2 = document.getElementById("SlowAttackP2");
 let HealP2 = document.getElementById("HealP2");
+let SkipP2 = document.getElementById("SkipP2");
 
 let manaP2 = 100;
 
@@ -88,4 +89,5 @@ function disableButtonP2(){
     QuickAttackP2.disabled = true;
     SlowAttackP2.disabled = true;
     HealP2.disabled = true;
+    SkipP2.disabled = true;
 }

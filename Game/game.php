@@ -19,7 +19,7 @@
         <button onclick="slowAttackP1()" id="SlowAttackP1">Attaque lente</button>
         <button onclick="getHealP1()" id="HealP1" disabled>Heal</button>
         <button onclick="exec()" id="Execution" disabled>Execution</button>
-        <button onclick="skipP1()">Skip</button>
+        <button onclick="skipP1()" id="SkipP1">Skip</button>
     </div>
 
     <div id="player2">
@@ -29,7 +29,7 @@
         <button onclick="quickAttackP2()" id="QuickAttackP2" disabled>Attaque rapide</button>
         <button onclick="slowAttackP2()" id="SlowAttackP2" disabled>Attaque lente</button>
         <button onclick="getHealP2()" id="HealP2" disabled>Heal</button>
-        <button onclick="skipP2()">Skip</button>
+        <button onclick="skipP2()" id="SkipP2">Skip</button>
     </div>
 
     <div>

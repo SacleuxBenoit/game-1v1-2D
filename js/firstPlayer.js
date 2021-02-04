@@ -2,6 +2,7 @@ let QuickAttackP1 = document.getElementById("QuickAttackP1");
 let SlowAttackP1 = document.getElementById("SlowAttackP1");
 let Execution = document.getElementById("Execution");
 let HealP1 = document.getElementById("HealP1");
+let SkipP1 = document.getElementById("SkipP1");
 
 let manaP1 = 100;
 
@@ -82,6 +83,7 @@ function disableButtonP1(){
     SlowAttackP1.disabled = true;
     HealP1.disabled = true;
     Execution.disabled = true;
+    SkipP1.disabled = true;
 }
 
 function enableButtonP1(){
