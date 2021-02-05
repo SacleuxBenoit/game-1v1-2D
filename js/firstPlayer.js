@@ -51,6 +51,12 @@ function getHealP1(){
     checkLifeP1();
 }
 
+function skipP1(){
+    disableButtonP1();
+    enableButtonP2();
+    firstTitle.textContent = "Au tour du joueur 2"
+}
+
 function nextPlayerP1(){
     firstTitle.textContent = "Au tour du joueur 2"
     disableButtonP1();
@@ -91,4 +97,5 @@ function enableButtonP1(){
     SlowAttackP1.disabled = false;
     HealP1.disabled = false;
     Execution.disabled = false;
+    SkipP1.disableButtonP1 = false;
 }

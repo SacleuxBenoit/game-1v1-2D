@@ -46,6 +46,12 @@ function getHealP2(){
     checkLifeP2();
 }
 
+function skipP2(){
+    disableButtonP2();
+    enableButtonP1();
+    firstTitle.textContent = "Au tour du joueur 1"
+}
+
 function nextPlayerP2(){
     firstTitle.textContent = "Au tour du joueur 1"
     disableButtonP2();
@@ -83,6 +89,7 @@ function enableButtonP2(){
     QuickAttackP2.disabled = false;
     SlowAttackP2.disabled = false;
     HealP2.disabled = false;
+    SkipP2.disabled = false;
 }
 
 function disableButtonP2(){
