@@ -49,6 +49,7 @@ function getHealP2(){
 function skipP2(){
     disableButtonP2();
     enableButtonP1();
+    Execution.disabled = true;
     firstTitle.textContent = "Au tour du joueur 1"
 }
 
