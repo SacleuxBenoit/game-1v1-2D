@@ -50,6 +50,7 @@ function skipP2(){
     disableButtonP2();
     enableButtonP1();
     Execution.disabled = true;
+    SkipP1.disabled = false;
     firstTitle.textContent = "Au tour du joueur 1"
 }
 
@@ -60,6 +61,7 @@ function nextPlayerP2(){
     QuickAttackP1.disabled = false;
     SlowAttackP1.disabled = false;
     HealP1.disabled = false;
+    SkipP1.disabled = false;
 
     if(lifeP2 <= 25){
         Execution.disabled = false;
