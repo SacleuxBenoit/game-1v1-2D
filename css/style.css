@@ -1,5 +1,7 @@
 body{
+    background-image: url('../images/background_mario.png');
     font-family: 'Architects Daughter', cursive;
+    background-size: cover;
 }
 
 .life{
