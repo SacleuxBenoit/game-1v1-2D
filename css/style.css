@@ -31,3 +31,11 @@ body{
 #firstTitle{
     text-align: center;
 }
+
+.btn_mario{
+    color: rgb(189, 41, 41);
+}
+
+.btn_luigi{
+    color: rgb(10, 148, 10);
+}
