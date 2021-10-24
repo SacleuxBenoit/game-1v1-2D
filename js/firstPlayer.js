@@ -23,7 +23,6 @@ function reduceLifeP1(min, max, reduceMana){
 
 function verifyManaP1(){
     if(manaP1 <= 9){
-        Execution.disabled = true;
         SlowAttackP1.disabled = true;
     }
 }
@@ -34,10 +33,6 @@ function quickAttackP1(){
 
 function slowAttackP1(){
     reduceLifeP1(7, 15, 10);
-}
-
-function exec(){
-    reduceLifeP1(25,25, 20)
 }
 
 function getHealP1(){
@@ -88,7 +83,6 @@ function disableButtonP1(){
     QuickAttackP1.disabled = true;
     SlowAttackP1.disabled = true;
     HealP1.disabled = true;
-    Execution.disabled = true;
     SkipP1.disabled = true;
 }
 
@@ -96,6 +90,5 @@ function enableButtonP1(){
     QuickAttackP1.disabled = false;
     SlowAttackP1.disabled = false;
     HealP1.disabled = false;
-    Execution.disabled = false;
     SkipP1.disableButtonP1 = false;
 }
