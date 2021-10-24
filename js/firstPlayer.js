@@ -1,6 +1,5 @@
 let QuickAttackP1 = document.getElementById("QuickAttackP1");
 let SlowAttackP1 = document.getElementById("SlowAttackP1");
-let Execution = document.getElementById("Execution");
 let HealP1 = document.getElementById("HealP1");
 let SkipP1 = document.getElementById("SkipP1");
 

@@ -5,8 +5,6 @@ let showManaP1 = document.getElementById("showManaP1");
 let showManaP2 = document.getElementById("showManaP2");
 
 let firstTitle = document.getElementById('firstTitle');
-let result = document.getElementById("result");
-
 
 let lifeP1 = 100;
 let lifeP2 = 100;
@@ -36,7 +34,6 @@ function resetP1(){
     QuickAttackP1.disabled = false;
     SlowAttackP1.disabled = false;
     HealP1.disabled = true;
-    Execution.disabled = true;
 
     showManaP2.textContent = manaP2 + " %";
     showLifeP2.textContent = lifeP2 + " %";
@@ -59,5 +56,4 @@ function reset(){
     resetP1();
     resetP2();
     displayText();
-    result.textContent = " ";
 }
