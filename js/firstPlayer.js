@@ -58,7 +58,7 @@ function nextPlayerP1(){
     enableButtonP2();
 
     if(lifeP2 <= 0){
-        result.textContent = "Le joueur 1 a gagné.";
+        firstTitle.textContent = "Le joueur 1 a gagné.";
         disableButtonP1();
         disableButtonP2();
         showLifeP2.textContent = " 0 %"
