@@ -24,6 +24,7 @@ function reduceLifeP2(min, max, reduceMana){
 function verifyManaP2(){
     if(manaP2 <= 9){
         SlowAttackP2.disabled = true;
+        HealP2.disabled = true;
     }
 }
 
@@ -45,6 +46,7 @@ function getHealP2(){
     showLifeP2.textContent = lifeP2 + " %";
     nextPlayerP2();
     checkLifeP2();
+    verifyManaP2();
 }
 
 function skipP2(){

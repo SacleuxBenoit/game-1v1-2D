@@ -23,6 +23,7 @@ function reduceLifeP1(min, max, reduceMana){
 function verifyManaP1(){
     if(manaP1 <= 9){
         SlowAttackP1.disabled = true;
+        HealP1.disabled = true;
     }
 }
 
@@ -42,8 +43,9 @@ function getHealP1(){
     manaP1 -=20;
     showManaP1.textContent = manaP1 + " %";
     showLifeP1.textContent = lifeP1 + " %";
-    nextPlayerP1();
     checkLifeP1();
+    verifyManaP1();
+    nextPlayerP1();
 }
 
 function skipP1(){
