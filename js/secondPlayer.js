@@ -28,19 +28,20 @@ function verifyManaP2(){
 }
 
 function quickAttackP2(){
-    reduceLifeP2(6, 12, 0);
+    reduceLifeP2(9, 12, 0);
 }
 
 function slowAttackP2(){
-    reduceLifeP2(7, 15, 10);
+    reduceLifeP2(12, 20, 10);
 }
 
 function getHealP2(){
-    let min = 7;
-    let max = 10;
+    let min = 15;
+    let max = 25;
     let random = Math.floor((Math.random() * (max - min) + min));
     lifeP2 += random;
-    manaP2 -=10;
+    manaP2 -=20;
+    showManaP2.textContent = manaP2 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     nextPlayerP2();
     checkLifeP2();
