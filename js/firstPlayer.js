@@ -3,7 +3,7 @@ let SlowAttackP1 = document.getElementById("SlowAttackP1");
 let HealP1 = document.getElementById("HealP1");
 let SkipP1 = document.getElementById("SkipP1");
 
-let manaP1 = 100;
+let manaP1 = 30;
 
 function displayPlayer1(){
     showManaP1.textContent = manaP1 + " %";
@@ -89,8 +89,15 @@ function disableButtonP1(){
 }
 
 function enableButtonP1(){
-    QuickAttackP1.disabled = false;
-    SlowAttackP1.disabled = false;
-    HealP1.disabled = false;
-    SkipP1.disableButtonP1 = false;
+        QuickAttackP1.disabled = false;
+        SlowAttackP1.disabled = false;
+        HealP1.disabled = false;
+        SkipP1.disableButtonP1 = false;
+
+    if(manaP1 <= 19 && manaP1 >=10){
+        HealP1.disabled = true;
+    }else if(manaP1 <= 9){
+        HealP1.disabled = true;
+        SlowAttackP1.disabled = true;
+    }
 }
