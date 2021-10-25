@@ -60,11 +60,7 @@ function skipP2(){
 function nextPlayerP2(){
     firstTitle.textContent = "Au tour du joueur 1"
     disableButtonP2();
-
-    QuickAttackP1.disabled = false;
-    SlowAttackP1.disabled = false;
-    HealP1.disabled = false;
-    SkipP1.disabled = false;
+    enableButtonP1();
 
     if(lifeP2 <= 25){
         Execution.disabled = false;
@@ -91,16 +87,23 @@ function checkLifeP2(){
     }
 }
 
-function enableButtonP2(){
-    QuickAttackP2.disabled = false;
-    SlowAttackP2.disabled = false;
-    HealP2.disabled = false;
-    SkipP2.disabled = false;
-}
-
 function disableButtonP2(){
     QuickAttackP2.disabled = true;
     SlowAttackP2.disabled = true;
     HealP2.disabled = true;
     SkipP2.disabled = true;
+}
+
+function enableButtonP2(){
+    QuickAttackP2.disabled = false;
+    SlowAttackP2.disabled = false;
+    HealP2.disabled = false;
+    SkipP2.disabled = false;
+
+    if(manaP2 <= 19 && manaP2 >=10){
+        HealP2.disabled = true;
+    }else if(manaP2 <= 9){
+        HealP2.disabled = true;
+        SlowAttackP2.disabled = true;
+    }
 }

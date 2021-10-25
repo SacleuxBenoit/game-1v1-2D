@@ -3,7 +3,7 @@ let SlowAttackP1 = document.getElementById("SlowAttackP1");
 let HealP1 = document.getElementById("HealP1");
 let SkipP1 = document.getElementById("SkipP1");
 
-let manaP1 = 30;
+let manaP1 = 100;
 
 function displayPlayer1(){
     showManaP1.textContent = manaP1 + " %";
